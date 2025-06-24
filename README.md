@@ -1,15 +1,8 @@
 # HouseNovel
-OCR Extraction: Reads images 104.png–108.png from a specified folder, detects text blocks via Pillow+OpenCV morphological operations, and runs Tesseract on each block to produce a consolidated text file (text.txt).
-
-Parsing: Reads text.txt (lines starting with "), uses regex and spaCy NER to extract name, spouse, occupation, company, and address fields, then outputs a JSON array (combined.json).
-
-
 
 # Minneapolis 1900 Directory Extraction & Parsing Suite
 
 This document consolidates all scripts, configurations, and instructions you’ve developed so far for extracting text from scanned directory pages and converting that text into structured JSON.
-
----
 
 ## Table of Contents
 
@@ -17,7 +10,6 @@ This document consolidates all scripts, configurations, and instructions you’v
 2. [Prerequisites](#prerequisites)
 3. [OCR Pipeline (`pillow_box_ocr.py`)](#ocr-pipeline)
 4. [Text → JSON Parser (`text_to_json.py`)](#text-json-parser)
-5. [README.md](#readmemd)
 
 ---
 
@@ -206,13 +198,3 @@ def main():
 
 if __name__=='__main__': main()
 ```
-
----
-
-## README.md
-
-A standalone `README.md` is included in the repo root covering installation, usage, and schema.
-
----
-
-*End of Consolidated Documentation*
