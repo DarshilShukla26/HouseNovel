@@ -41,7 +41,7 @@ All paths are configurable at the top of each script.
 
 ---
 
-## OCR Pipeline (`pillow_box_ocr.py`)
+## OCR Pipeline
 
 ```python
 #!/usr/bin/env python3
@@ -134,7 +134,7 @@ if __name__=='__main__': main()
 
 ---
 
-## Text → JSON Parser (`text_to_json.py`)
+## Text → JSON Parser
 
 ```python
 #!/usr/bin/env python3
@@ -200,7 +200,7 @@ if __name__=='__main__': main()
 ```
 
 
-#Things done before this
+## Things done before this
 
 Selenium Scraper(Used for preparation of Dataset)
 Automated navigation of the Minneapolis directory site: clicked each item, selected all options, and captured “tile surface” screenshots.
