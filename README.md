@@ -1,6 +1,6 @@
 # HouseNovel
 
-# Minneapolis 1900 Directory Extraction & Parsing Suite
+# Minneapolis 1900 Directory Extraction 
 
 This document consolidates all scripts, configurations, and instructions you’ve developed so far for extracting text from scanned directory pages and converting that text into structured JSON.
 
