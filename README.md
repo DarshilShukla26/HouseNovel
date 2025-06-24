@@ -198,3 +198,29 @@ def main():
 
 if __name__=='__main__': main()
 ```
+
+
+#Things done before this
+
+Selenium Scraper(Used for preparation of Dataset)
+Automated navigation of the Minneapolis directory site: clicked each item, selected all options, and captured “tile surface” screenshots.
+Persisted a processed‑items list (with file locking) to avoid duplicate work, and spun up 10 concurrent threads so each scraper handles a disjoint subset of pages.
+
+OCR Preprocessing & Extraction
+Implemented a local pipeline (Tesseract, with optional Google Cloud Vision) that converts scans to grayscale, denoises, deskews, and applies adaptive thresholding.
+Ran OCR and used Tesseract’s word‑bounding‑box output to reconstruct lines and paragraphs.
+
+Structured Data Parsers
+Developed regex‑ and keyword‑based parsers to extract:
+
+First/last names (and spouse names, if listed)
+
+Home addresses and “h.”/“res.” markers
+
+Occupations, employer/business names, and addresses
+
+Directory year
+
+End‑to‑End Workflow Packaging
+Packaged scripts to process the entire 1900–1950 dataset (or any single year/page).
+Standardized directory naming, flagged suspicious entries for manual QA, and output clean JSON files.
