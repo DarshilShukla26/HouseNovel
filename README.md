@@ -19,8 +19,7 @@ This suite performs two main tasks:
 
 1. **OCR Extraction**: Reads images `104.png`–`108.png` from a specified folder, detects text blocks via Pillow+OpenCV morphological operations, and runs Tesseract on each block to produce a consolidated text file (`text.txt`).
 2. **Parsing**: Reads `text.txt` (lines starting with `"`), uses regex and spaCy NER to extract name, spouse, occupation, company, and address fields, then outputs a JSON array (`combined.json`).
-
-All paths are configurable at the top of each script.
+NOTE: The ipynb file is submitted without editing and has all the attempts made by me to reach final result. If you want to see the final result, jump straight to end of the file.
 
 ---
 
